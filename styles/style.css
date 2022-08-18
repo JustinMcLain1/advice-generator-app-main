@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #1f2632;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323a49;
+  position: absolute;
+  width: clamp(295px, 90%, 34rem);
+  margin-top: 7.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 1rem 2rem .1rem black;
+}
+.card .card__number {
+  color: #52ffa8;
+  text-transform: uppercase;
+  font-size: 0.651rem;
+  letter-spacing: 3px;
+  padding: 2.5rem 0 1.5rem 0;
+}
+.card .card__quote {
+  width: 85%;
+  color: #cee3e9;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card__quote::after {
+  content: url(../images/pattern-divider-mobile.svg);
+  padding: 1rem;
+  overflow: hidden;
+}
+.card .card__dice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #52ffa8;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: relative;
+  bottom: -2rem;
+}
+.card .card__dice img {
+  height: 1.5rem;
+}
+.card .card__dice:hover {
+  box-shadow: 0rem 0rem 2rem #52ffa8;
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 1%;
+  width: 100%;
+  font-size: 0.75rem;
+  text-align: center;
+  color: #cee3e9;
+}
+footer a {
+  color: #cee3e9;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #4e5d73;
+}
+
+@media (min-width: 800px) {
+  body {
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .card {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    width: 34rem;
+  }
+  .card .card__number {
+    font-size: 0.9rem;
+    letter-spacing: 3px;
+    padding: 3.25rem 0 1.5rem 0;
+  }
+  .card .card__quote {
+    font-size: 1.75rem;
+  }
+  .card .card__quote::after {
+    padding-top: 2rem;
+    content: url(../images/pattern-divider-desktop.svg);
+  }
+}
