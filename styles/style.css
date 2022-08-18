@@ -24,9 +24,9 @@ body {
   align-items: center;
   background-color: #323a49;
   position: absolute;
-  width: clamp(295px, 90%, 34rem);
+  width: clamp(295px, 90%, 30rem);
   margin-top: 7.5rem;
-  border-radius: 0.5rem;
+  border-radius: 30px;
   box-shadow: 0rem 1rem 2rem .1rem black;
 }
 .card .card__number {
